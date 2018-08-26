@@ -54,9 +54,9 @@
     var $Painter = new Easycanvas.painter();
 
     // 图片
-    var BALL = 'https://github.com/LinDaiDai/playAplay/blob/master/asset/apple.png?raw=true';
-    var BLOCK = 'https://github.com/LinDaiDai/playAplay/blob/master/asset/orange.png?raw=true';
-    var TRIANGLE = 'https://github.com/LinDaiDai/playAplay/blob/master/asset/lime.png?raw=true';
+    var BALL = './asset/apple.png?raw=true';
+    var BLOCK = './asset/orange.png?raw=true';
+    var TRIANGLE = './asset/lime.png?raw=true';
 
     // 用于碰撞检测
     var BALL_TYPE = 1, BLOCK_TYPE = 2, BORDER_TYPE = 3, BOTTOM_TYPE = 4, BONUS_TYPE = 5;
@@ -76,8 +76,8 @@
         }
     });
 
-    var BLOCK3D = $Painter.imgLoader('https://github.com/LinDaiDai/playAplay/blob/master/asset/asset/lime.png?raw=true');
-    var BALL3D = $Painter.imgLoader('https://github.com/LinDaiDai/playAplay/blob/master/asset/asset/orange.png?raw=true');
+    var BLOCK3D = $Painter.imgLoader('./asset/lime.png?raw=true');
+    var BALL3D = $Painter.imgLoader('./asset/orange.png?raw=true');
 
     $Painter.start();
 
