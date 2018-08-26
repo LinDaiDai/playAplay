@@ -1,8 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./build/easycanvas.standalone.prod.js"></script>
     <script src="./build/plugin.physics.standalone.prod.js"></script>
     <script src="./build/plugin.webgl.standalone.prod.js"></script>
+    <title>playAplay</title>
 </head>
 
 <style>
@@ -48,9 +54,9 @@
     var $Painter = new Easycanvas.painter();
 
     // 图片
-    var BALL = 'https://github.com/LinDaiDai/weixin/blob/master/playAPlay/asset/apple.png?raw=true';
-    var BLOCK = 'https://github.com/LinDaiDai/weixin/blob/master/playAPlay/asset/orange.png?raw=true';
-    var TRIANGLE = 'https://github.com/LinDaiDai/weixin/blob/master/playAPlay/asset/lime.png?raw=true';
+    var BALL = 'https://github.com/LinDaiDai/playAplay/blob/master/asset/apple.png?raw=true';
+    var BLOCK = 'https://github.com/LinDaiDai/playAplay/blob/master/asset/orange.png?raw=true';
+    var TRIANGLE = 'https://github.com/LinDaiDai/playAplay/blob/master/asset/lime.png?raw=true';
 
     // 用于碰撞检测
     var BALL_TYPE = 1, BLOCK_TYPE = 2, BORDER_TYPE = 3, BOTTOM_TYPE = 4, BONUS_TYPE = 5;
@@ -70,8 +76,8 @@
         }
     });
 
-    var BLOCK3D = $Painter.imgLoader('https://github.com/LinDaiDai/weixin/blob/master/playAPlay/asset/lime.png?raw=true');
-    var BALL3D = $Painter.imgLoader('https://github.com/LinDaiDai/weixin/blob/master/playAPlay/asset/orange.png?raw=true');
+    var BLOCK3D = $Painter.imgLoader('https://github.com/LinDaiDai/playAplay/blob/master/asset/asset/lime.png?raw=true');
+    var BALL3D = $Painter.imgLoader('https://github.com/LinDaiDai/playAplay/blob/master/asset/asset/orange.png?raw=true');
 
     $Painter.start();
 
